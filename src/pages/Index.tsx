@@ -16,7 +16,8 @@ interface FuelData {
 }
 
 const fetchFuelPrices = async (): Promise<FuelData> => {
-  const res = await fetch("https://fuel-monitor.onrender.com/latest");
+  const url = encodeURIComponent("https://fuel-monitor.onrender.com/latest");
+  const res = await fetch(`https://api.allorigins.win/raw?url=${url}`);
   if (!res.ok) throw new Error("Błąd pobierania danych");
   return res.json();
 };
