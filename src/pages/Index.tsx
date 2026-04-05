@@ -1,26 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Fuel, Droplets, TrendingUp, Calendar, FileText } from "lucide-react";
 
-interface FuelData {
-  id: string;
-  title: string;
-  publication_date: string;
-  detail_url: string;
-  pdf_url: string;
-  pb95_net: string;
-  pb95_gross: string;
-  pb98_net: string;
-  pb98_gross: string;
-  diesel_net: string;
-  diesel_gross: string;
-}
-
-const fetchFuelPrices = async (): Promise<FuelData> => {
-  const url = encodeURIComponent("https://fuel-monitor.onrender.com/latest");
-  const res = await fetch(`https://api.allorigins.win/raw?url=${url}`);
-  if (!res.ok) throw new Error("Błąd pobierania danych");
-  return res.json();
-};
+import { fetchFuelPrices } from '@/api/fetchFuelPrices.ts'
 
 const FuelCard = ({
   name,
