@@ -86,7 +86,7 @@ const Index = () => {
                 name="PB98"
                 gross={data.pb98_gross}
                 net={data.pb98_net}
-                icon={Droplets}
+                icon={Fuel}
                 colorClass="bg-[hsl(var(--fuel-pb98))]"
               />
               <FuelCard
