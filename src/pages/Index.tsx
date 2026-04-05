@@ -54,7 +54,7 @@ const Index = () => {
             Ceny paliw w Polsce
           </h1>
           <p className="text-muted-foreground">
-            Na podstawie obwieszczenia Ministra Finansów
+            Na podstawie obwieszczenia Ministra Energii
           </p>
         </header>
 

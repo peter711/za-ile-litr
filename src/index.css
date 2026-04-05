@@ -38,9 +38,9 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    --fuel-pb95: 34 100% 50%;
-    --fuel-pb98: 16 100% 50%;
-    --fuel-diesel: 220 70% 50%;
+    --fuel-pb95: 140 100% 30%;
+    --fuel-pb98: 145 90% 20%;
+    --fuel-diesel: 0 0% 0%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
